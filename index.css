@@ -3,5 +3,25 @@
 body{
     color: white;
     font-family:  trebuchet, sans-serif;
-    background-color: #7d48ff;
+    background-color: #2f006d;
+    font-size:large;
+}
+
+h1{font-size: xx-large;}
+
+h2{font-size: x-large}
+
+p{font-size: large}
+
+.info{
+    left:10%;
+    position:absolute;
+}
+
+.panel{
+    top:10%;
+    padding: 2%;
+    right:10%;
+    position: absolute;
+    background-color:#7d48ff;
 }
