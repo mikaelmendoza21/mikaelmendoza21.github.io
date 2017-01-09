@@ -5,30 +5,70 @@
         <link rel="StyleSheet" type = "text/css" href = "index.css" media = "all" />
         <script type = "text/javascript" 
         src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            function openTab(evt, cityName) {
+            
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the link that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        function init(){
+            document.getElementById("defaultTab").click();
+        }
+        window.addEventListener("load", init, false);
+        </script>
     </head> 
     <body>
         <div class="info">
             <h1>Mikael A Mendoza</h1>
             <p>Software Developer</p>
+            <img src="https://avatars2.githubusercontent.com/u/16824620?v=3&s=400">
         </div>
         <div class="panel">
-            <ul>
-                <li><h2>Education</h2>
-                    <ul>
-                        <li>
-                            <h2>B.S. Computer Science<h2>
-                            <p>California State University Northridge (2017)</p>
-                        </li>
-                    </ul>
-                </li>
-                <li><h2>Projects</h2>
-                    <ul>
-                        <li>Strolling Around</li>
-                        <li>vlogMe</li>
-                        <li>LIT</li>
-                    </ul>
-                </li>
+            <ul class="tab">
+                <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Education')" id="defaultTab">Education</a></li>
+                <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Projects')">Projects</a></li>
+                <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Experience')">Experience</a></li>
             </ul>
+            <div id="Education" class="tabcontent">
+                <h2>Education</h2>
+                <h3>B.S. Computer Science</h3>
+                <em>California State University Northridge (2017)</em>
+            </div>
+            <div id="Projects" class="tabcontent">
+                <h2>Projects</h2>
+                <!--<a href="https://github.com/CSUN-CS/2016ContestTeam_2">--><h3>Strolling Around</h3></a>
+                <p>An Android application aiming to provide Accessible Navigation services to people with mobility disabilities.
+                    Built using Google Maps API and crowdsourcing to share pins noting accessible entrances, ramps, elevators, etc.</p>
+                <br>
+                <!--<a href="https://github.com/CSUNCOMP467F2016/vlogme-client">--><h3>vlogMe</h3></a>
+                <p>A Web App that allows users to upload Video Topics and the ability to share Video Responses to those topics. The UI allows for easy switching between the Main Topic and relevant Responses at specific points of the Main Video. Developed using the Polymer 1.0 framework, DASH video, and video.js.</p>
+                <br>
+                <!--<a href="https://github.com/chrislong407/HomeAutomationSystem">--><h3>Living In Technology (LIT)</h3></a>
+                <p>An affordable SmartHome system, <em>Living In Technology</em> provides a framework for controlling devices at home from anywhere in the world through its Web Services. Hardware built in a cost-effectie manner through the use of Raspberry Pi devices with the LIT software included. Making use of Apache Web servers, SpringBoot RESTful services, Pi4j Java library, and other open-source software to build a comprehensive and responsive service. The System is currently in its prototype stages, and will be released at CSUN's School of Engineering and Computer Science 2017 Senior Design showcase</p>
+            </div>
+            <div id="Experience" class="tabcontent">
+                <h2>Experience</h2>
+                <h3>CSUN National Accessibility Competition 2016</h3>
+                <em>Software Developer, Graphic Designer</em>
+                <p>Awarded First Place for the development of the <em>Strolling Around</em> Android application</p>
+                </li>
+            </div>
         </div>
     </body>
 </html>
