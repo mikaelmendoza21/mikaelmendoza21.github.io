@@ -13,20 +13,30 @@ h2{font-size: x-large}
 
 h3{font-size: large;}
 
-p{font-size: medium}
+p{font-size: medium;}
 
 .info{
-    left:10%;
+    width:38%;
+    left:5%;
+    top:5%;
+    padding:1%;
     position:absolute;
+    background-color:#7d48ff;
+    text-align: center;
 }
 
 .panel{
-    top:10%;
+    top:5%;
     width:40%;
-    padding: 2%;
     right:10%;
+    padding: 1px;
     position: absolute;
     background-color:#7d48ff;
+}
+
+#portrait{
+    width:60%;
+    height:auto;
 }
 
 /* Tab styling ------------ */
@@ -35,30 +45,28 @@ ul.tab {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: #673DCC;
 }
 
 ul.tab li {float: left;}
 
 ul.tab li a {
     display: inline-block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: large;
 }
 
-ul.tab li a:hover {background-color: #ddd;}
+ul.tab li a:hover {background-color: #9063FF; text-decoration: bold;}
 
-ul.tab li a:focus, .active {background-color: #ccc;}
+ul.tab li a:focus, .active {background-color: #9063FF;}
 
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
     border-top: none;
 }
 
