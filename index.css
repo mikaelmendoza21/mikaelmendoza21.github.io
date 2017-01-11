@@ -43,14 +43,14 @@ p{font-size: medium;}
 /* Mobile Layout */
 @media only screen and (max-width: 1280px){
     body{
-        font-size:1.5 em;
+        font-size:1em;
     }
 
-    h1{font-size:2.5 em;}
+    h1{font-size:2em;}
 
-    h2{font-size: 2 em;}
+    h2{font-size: 1.5em;}
 
-    h3{font-size: 1.7 em;}
+    h3{font-size: 1.3em;}
     .info{
         width:90%;
         height: 60%;
