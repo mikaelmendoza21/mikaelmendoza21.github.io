@@ -41,7 +41,7 @@ p{font-size: medium;}
 }
 
 /* Mobile Layout */
-@media (max-width: 480px){
+@media (max-width: 800px){
     .info{
         width:90%;
         height: 60%;
