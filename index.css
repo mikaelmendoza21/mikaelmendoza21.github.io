@@ -28,15 +28,32 @@ p{font-size: medium;}
 .panel{
     top:5%;
     width:40%;
-    right:10%;
-    padding: 1px;
+    right:5%;
+    padding: 1%;
     position: absolute;
     background-color:#7d48ff;
+    text-align: center;
 }
 
 #portrait{
     width:60%;
     height:auto;
+}
+
+/* Mobile Layout */
+@media (max-width: 480px){
+    .info{
+        width:90%;
+        height: 60%;
+        position:absolute;
+    }
+
+    .panel{
+        width:90%;
+        top:70%;
+        left:5%;
+        position: absolute;
+    }
 }
 
 /* Tab styling ------------ */
