@@ -42,8 +42,8 @@ p{font-size: medium;}
 
 /* Mobile Layout */
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) {
+  and (min-device-width: 480px) 
+  and (max-device-width: 1280px) {
     .info{
         width:90%;
         height: 60%;
