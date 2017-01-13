@@ -4,70 +4,112 @@ body{
     color: white;
     font-family:  trebuchet, sans-serif;
     background-color: #2f006d;
-    font-size:large;
 }
 
-h1{font-size: xx-large;}
-
-h2{font-size: x-large}
-
-h3{font-size: large;}
-
-p{font-size: medium;}
-
-.info{
-    width:38%;
-    left:5%;
-    top:5%;
-    padding:1%;
-    position:absolute;
+.box{
+    display: block;
     background-color:#7d48ff;
     text-align: center;
+    color:white;
 }
 
-.panel{
-    top:5%;
-    width:40%;
-    right:5%;
-    padding: 1%;
-    position: absolute;
-    background-color:#7d48ff;
-    text-align: center;
-}
 
-#portrait{
-    width:60%;
-    height:auto;
-}
 
-/* Mobile Layout */
-@media only screen and (max-width: 1280px){
-    body{
-        font-size:100%;
-    }
+/*Desktop Layout */
+@media (min-width: 1080px){
 
-    h1{font-size:150%;}
+    body{ font-size: medium;
+    display:block; }
 
-    h2{font-size: 125%;}
+    h1{font-size: xx-large;}
 
-    h3{font-size: 110%;}
+    h2{font-size: x-large}
     
-    .info{
-        width:90%;
-        height: 60%;
+    h3{font-size: large;}
+
+    li{font-size:large;}
+    
+    #info{
+        width:40%;
+        height:auto;
+        left:0;
+        margin:5%;
+        margin-top:2%;
+        padding:0.5%;
         position:absolute;
     }
 
-    .panel{
-        width:90%;
-        top:70%;
-        left:5%;
+    #panel{
+        width:40%;
+        height:50%;
+        right:0;
+        margin:5%;
+        margin-top:2%;
+        padding: 0.5%;
         position: absolute;
+        overflow: auto;
+    }
+
+    #portrait{
+        height:60%;
+        width:auto;
+    }
+
+    #links{
+        width:40%;
+        height:23%;
+        top:65%;
+        right:0;
+        margin:5%;
+        margin-top:0;
+        padding: 0.5%;
+        position: absolute;
+    }
+}
+
+/* Mobile Layout */
+@media only screen and (max-width: 1080px){
+    body{
+        font-size:36px;
+        line-height: 0.95;
+    }
+
+    h1{font-size:200%;}
+
+    h2{font-size: 150%;}
+
+    h3{font-size: 125%;}
+
+    h3{font-size: 125%;}
+
+    li{font-size: 125%;}
+    
+    #info{
+        width:96%;
+        height: auto;
+        margin:2%;
+        padding:0.20%;
+    }
+
+    #panel{
+        width:96%;
+        height:auto;
+        margin:2%;
+        margin-top:0;
+        padding:0.20%;
     }
 
     #portrait{
     height:50%;
     width:auto;
+    }
+
+    #links{
+        margin:2%;
+        margin-top:0;
+        width:96%;
+        height:auto;
+        padding:0.20%;
     }
 }
 
@@ -89,7 +131,6 @@ ul.tab li a {
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: large;
 }
 
 ul.tab li a:hover {background-color: #9063FF; text-decoration: bold;}
@@ -97,9 +138,10 @@ ul.tab li a:hover {background-color: #9063FF; text-decoration: bold;}
 ul.tab li a:focus, .active {background-color: #9063FF;}
 
 .tabcontent {
-    display: none;
+    display: block;
     padding: 6px 12px;
     border-top: none;
+    overflow:auto;
 }
 
 /* Fade Effects */
