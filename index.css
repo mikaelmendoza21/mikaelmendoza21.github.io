@@ -13,13 +13,13 @@ body{
     color:white;
 }
 
-
-
 /*Desktop Layout */
 @media (min-width: 1080px){
 
-    body{ font-size: medium;
-    display:block; }
+    body{ 
+        font-size: medium;
+        display:block; 
+        line-height: 0.95;}
 
     h1{font-size: xx-large;}
 
@@ -154,6 +154,7 @@ ul.tab li a:focus, .active {background-color: #9063FF;}
     padding: 6px 12px;
     border-top: none;
     overflow:auto;
+    text-align: left;
 }
 
 .tabcontent h2{
