@@ -77,7 +77,7 @@ body{
 /* Mobile Layout */
 @media only screen and (max-width: 1080px){
     body{
-        font-size:36px;
+        font-size:26px;
         line-height: 0.95;
     }
 
