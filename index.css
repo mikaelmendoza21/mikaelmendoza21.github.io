@@ -18,8 +18,8 @@ html, body{
 
 .card-block{
 	background-color: var(--secondary-color);
+	/*padding: 0;*/
 }
-
 
 #info{
 	border-color: black;
@@ -28,7 +28,6 @@ html, body{
 #details{
 	border-color:black;
 	text-align: left;
-	overflow: auto;
 }
 
 a{
@@ -44,6 +43,8 @@ a{
 	}
 	#info{
 		margin-bottom: 2%;
+		height: 60%;
+		width: auto;
 	}
 }
 
