@@ -38,7 +38,7 @@ a{
 #links{
 }
 
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 1080px){
 	#content{
 		display: block;
 	}
@@ -47,7 +47,7 @@ a{
 	}
 }
 
-@media (min-width: 720px){
+@media (min-width: 1080px){
 	#info{
 		max-width:30%;
 	}
