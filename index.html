@@ -2,78 +2,55 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <link rel="StyleSheet" type = "text/css" href = "index.css" media = "all" />
-        <script type="text/javascript">
-            function openTab(evt, tabName) {
-            
-            var i, tabcontent, tablinks;
+        <link rel="StyleSheet" type = "text/css" href = "index.css"/>
+        <title>Mikael A. Mendoza - Software Developer</title>
 
-            // Get all elements with class="tabcontent" and hide them
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-
-            // Get all elements with class="tablinks" and remove the class "active"
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            // Show the current tab, and add an "active" class to the link that opened the tab
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-        function init(){
-            document.getElementById("defaultTab").click();
-        }
-        window.addEventListener("load", init, false);
-        </script>
-    </head> 
+        <!-- Bootstrap imports -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    </head>
     <body>
-        <div class="box" id="info">
-            <h1>Mikael A Mendoza</h1>
-            <p>Software Developer</p>
-            <img id="portrait" src="https://avatars2.githubusercontent.com/u/16824620?v=3&s=400">
-        </div>
-        <div class="box" id="panel">
-            <ul class="tab">
-                <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Education')" id="defaultTab">Education</a></li>
-                <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Projects')">Projects</a></li>
-                <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Experience')">Experience</a></li>
-            </ul>
-            <div id="Education" class="tabcontent">
-                <h2>Education</h2>
-                <br>
-                <h3>B.S. Computer Science</h3>
-                <em>California State University Northridge (2017)</em>
-            </div>
-            <div id="Projects" class="tabcontent">
-                <h2>Projects</h2>
-                <br>
-                <h3>Strolling Around</h3>
-                <p>An Android application aiming to provide Accessible Navigation services to people with mobility disabilities.Built using Google Maps API and crowdsourcing to share pins noting accessible entrances, ramps, elevators, etc.</p>
-                <br>
-                <h3>vlogMe</h3>
-                <p>A Web App that allows users to upload Video Topics and the ability to share Video Responses to those topics. The UI allows for easy switching between the Main Topic and relevant Responses at specific points of the Main Video. Developed using the Polymer 1.0 framework, DASH video, and video.js.</p>
-                <br>
-                <h3>Living In Technology (LIT)</h3>
-                <p>An affordable SmartHome system, <em>Living In Technology</em> provides a framework for controlling devices at home from anywhere in the world through its Web Services. Hardware built in a cost-effectie manner through the use of Raspberry Pi devices with the LIT software included. Making use of Apache Web servers, SpringBoot RESTful services, Pi4j Java library, and other open-source software to build a comprehensive and responsive service. The System is currently in its prototype stages, and will be released at CSUN's School of Engineering and Computer Science 2017 Senior Design showcase</p>
-            </div>
-            <div id="Experience" class="tabcontent">
-                <h2>Experience</h2>
-                <br>
-                <h3>CSUN National Accessibility Competition 2016</h3>
-                <em>Software Developer, Graphic Designer</em>
-                <p>Awarded First Place for the development of the <em>Strolling Around</em> Android application</p>
-            </div>
-        </div>
-        <div class="box" id="links">
-            <h2>Links</h2>
-            <span><a href="https://www.linkedin.com/in/mikael-mendoza-86321a11b" target="_blank"><img class="icons" id="LinkedIn" width="100px" src="LinkedIn-icon.png"></a>
-            <a href="http://github.com/mikaelmendoza21" target="_blank"><img class="icons" id="Github" width="100px" src="Github-icon.png"></a>
-            <a href="http://mikaelmendoza21.github.io/Resume-public(MikaelAMendoza).pdf" target="_blank"><img class="icons" id="Resume" width="100px" src="Resume-icon.png"></a></span>
-        </div>
+    	<div id="content" class="card-deck">
+		  <div class="card" id="info">
+		    <img class="card-img-top" src="https://avatars2.githubusercontent.com/u/16824620?v=3&s=400" alt="Programmer Photo">
+		    <div class="card-block">
+		      <h3 class="card-title">Mikael A. Mendoza</h3>
+		      <p class="card-text"><b>Software Developer</b>
+		      <br><em>Interests: Application Development, Web Development and Mobile App Development</em></p>
+		    </div>
+		  </div>
+		  <div class="card" id="details">
+		    <div class="card-block">
+		      <h4 class="card-title">EDUCATION</h4>
+		      <p class="card-text">B.S. Computer Science <br>
+                <em>California State University Northridge (2017)</em></p>
+		      <br>
+		      <h4 class="card-title">EXPERIENCE</h4>
+		      <p class="card-text">
+		      	<b>Living In Technology (LiT)</b>
+		      	<em>Software Developer/Android Developer (August 2016-May 2017)</em><br>
+		      	<br>
+		      	<b>HushHush</b>
+		      	<em> Front-End Development Intern (February-May 2017)</em><br>
+		      	<br>
+		      	<b>vlogMe</b>
+		      	<em> Front-End Web Developer/UI Design (August-December 2016)</em><br>
+		      	<br>
+		      	<b>Strolling Around</b>
+		      	<em> Android Developer/Graphic Designer (February-May 2016)</em><br><br>
+		      </p>
+		      <h4 class="card-title">AWARDS</h4>
+		      <p class="card-text">1st Place - CSUN Accessibility Competition
+		      <em> Android Developer (May 2016)</em></p><br>
+		      <span id="links">
+		      	<a class="btn btn-primary" role="button" href="https://www.linkedin.com/in/mikael-mendoza-86321a11b" target="_blank">LinkedIn</a>
+		      	<a class="btn btn-primary" role="button"  href="http://github.com/mikaelmendoza21" target="_blank">Github</a>
+		      	<a class="btn btn-primary" role="button" href="http://mikaelmendoza21.github.io/Resume-MikaelMendoza.pdf" target="_blank">Resume</a>
+		      </span>
+		    </div>
+		  </div>
+		</div>
     </body>
 </html>
