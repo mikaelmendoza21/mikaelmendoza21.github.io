@@ -4,52 +4,29 @@
   --main-color: #2f006d;
   --secondary-color:#673DCC;
 }
+
 html, body{
     font-family:  trebuchet, sans-serif;
     background-color: var(--main-color);
 }
 
-#content{
+#info{
 	background-color: var(--main-color);
 	color: white;
-	padding:1.5%;
 	text-align: center;
-}
-
-.card-block{
-	background-color: var(--secondary-color);
-	/*padding: 0;*/
-}
-
-#info{
-	border-color: black;
-}
-
-#details{
-	border-color:black;
-	text-align: left;
-}
-
-a{
-	text-decoration: none;
-}
-
-#links{
+	padding: 2%;
 }
 
 @media only screen and (max-width: 1080px){
-	#content{
-		display: block;
-	}
-	#info{
-		margin-bottom: 2%;
-		height: 60%;
-		width: auto;
+	#portrait{
+		width:60%;
+		margin: 2%; 
 	}
 }
 
 @media (min-width: 1080px){
-	#info{
-		max-width:30%;
+	#portrait{
+		width:20%;
+		margin: 2%; 
 	}
 }
