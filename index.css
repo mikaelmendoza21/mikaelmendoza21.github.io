@@ -5,11 +5,26 @@
   --secondary-color:#673DCC;
 }
 
-html, body{
-    font-family:  trebuchet, sans-serif;
-    background-color: var(--main-color);
+html{
+	background-color: var(--main-color);
 }
 
+body{
+    font-family:  trebuchet, sans-serif;
+    font-size: 16px;
+    min-height: 100%;
+}
+
+.navbar-brand,
+.navbar-link{
+	font-size: 2em;
+}
+
+.container-fluid{
+	background-color: var(--main-color);
+	color:white;
+	padding:0;
+}
 #info{
 	background-color: var(--main-color);
 	color: white;
@@ -17,16 +32,28 @@ html, body{
 	padding: 2%;
 }
 
-@media only screen and (max-width: 1080px){
-	#portrait{
-		width:60%;
-		margin: 2%; 
-	}
+#projects{
+	margin-left: 10%;
+	text-align: left;
 }
 
-@media (min-width: 1080px){
+.page_title{
+	font-variant: small-caps;
+}
+
+
+#portrait{
+	width:60%;
+	margin: 2%; 
+}
+
+@media only screen and (min-width: 768px){
+	body{
+		font-size: 16px;
+	}
 	#portrait{
 		width:20%;
 		margin: 2%; 
 	}
+
 }
