@@ -1,8 +1,8 @@
 /* Mikael A. Mendoza - Github page stylesheet */
 
 :root {
-  --main-color: #2f006d;
-  --secondary-color:#673DCC;
+  --main-color: #2f006d; /* Dark Purple */
+  --secondary-color:#673DCC; /* Lighter Purple */
 }
 
 html{
@@ -45,6 +45,56 @@ body{
 #portrait{
 	width:60%;
 	margin: 2%; 
+}
+
+/*Tab rules*/
+.nav-tabs{
+	border-color: var(--secondary-color);
+}
+
+.tab_item{
+	padding: 1%;
+	text-decoration: none;
+	color: white;
+}
+
+.tab_item > a{
+	color:white;
+	font-size: 18px;
+}
+
+.tab_item.active{
+	background-color: var(--secondary-color);
+	font-weight: bold;
+}
+
+/*Carousel rules*/
+#carousel_container.carousel.slide{
+	max-width:98vw;
+	max-height: 60vh;
+	background-color: var(--secondary-color);
+}
+
+.carousel-inner{
+	max-width:98vw;
+	max-height:60vh;
+}
+
+/*Images sizing*/
+.carousel-item.active, .carousel-item{
+	max-width:98vw;
+	max-height: 60vh;
+	padding:1vh;
+	padding-left: 9.5vw;
+	padding-right: 9.5vw;
+}
+
+/*Description rules*/
+#project_description{
+	background-color: var(--secondary-color);
+	text-align: left;
+	padding:1%;
+	padding-left: 9.5vw;
 }
 
 @media only screen and (min-width: 768px){
