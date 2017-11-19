@@ -1,32 +1,61 @@
 /* Mikael A. Mendoza - Github page stylesheet */
+/* Mobile-First layout rules */
 
 :root {
-  --main-color: #2f006d;
-  --secondary-color:#673DCC;
+  --main-color: #2f006d; /* Dark Purple */
+  --secondary-color:#673DCC; /* Lighter Purple */
 }
 
-html, body{
-    font-family:  trebuchet, sans-serif;
-    background-color: var(--main-color);
-}
-
-#info{
+html{
 	background-color: var(--main-color);
-	color: white;
+}
+
+body{
+    font-family:  trebuchet, sans-serif;
+    font-size: 16px;
+    min-height: 98%;
+    color: white;
+}
+#info-card{
 	text-align: center;
-	padding: 2%;
+	line-height: 0.6;
 }
 
-@media only screen and (max-width: 1080px){
-	#portrait{
-		width:60%;
-		margin: 2%; 
+#portrait{
+	width:35%;
+	margin: 2%; 
+}
+
+#tabs{
+	color: white;
+	background-color: var(--secondary-color);
+	border: none;
+	margin: 2%; 
+}
+
+#tab-list{
+	background-color: var(--main-color);
+	border: none;
+}
+
+.ui-tabs-active.tab-title{
+	background-color: black;
+	border: none;
+}
+
+.tab-content{
+	color: white;
+}
+
+
+/* Desktop layout */
+@media only screen and (min-width: 768px){
+	body{
+		font-size: 16px;
 	}
-}
-
-@media (min-width: 1080px){
 	#portrait{
 		width:20%;
 		margin: 2%; 
 	}
+
 }
