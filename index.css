@@ -1,4 +1,5 @@
 /* Mikael A. Mendoza - Github page stylesheet */
+/* Mobile-First layout rules */
 
 :root {
   --main-color: #2f006d; /* Dark Purple */
@@ -12,91 +13,42 @@ html{
 body{
     font-family:  trebuchet, sans-serif;
     font-size: 16px;
-    min-height: 100%;
+    min-height: 98%;
+    color: white;
 }
-
-.navbar-brand,
-.navbar-link{
-	font-size: 2em;
-}
-
-.container-fluid{
-	background-color: var(--main-color);
-	color:white;
-	padding:0;
-}
-#info{
-	background-color: var(--main-color);
-	color: white;
+#info-card{
 	text-align: center;
-	padding: 2%;
+	line-height: 0.6;
 }
-
-#projects{
-	margin-left: 10%;
-	text-align: left;
-}
-
-.page_title{
-	font-variant: small-caps;
-}
-
 
 #portrait{
-	width:60%;
+	width:35%;
 	margin: 2%; 
 }
 
-/*Tab rules*/
-.nav-tabs{
-	border-color: var(--secondary-color);
+#tabs{
+	color: white;
+	background-color: var(--secondary-color);
+	border: none;
+	margin: 2%; 
 }
 
-.tab_item{
-	padding: 1%;
-	text-decoration: none;
+#tab-list{
+	background-color: var(--main-color);
+	border: none;
+}
+
+.ui-tabs-active.tab-title{
+	background-color: black;
+	border: none;
+}
+
+.tab-content{
 	color: white;
 }
 
-.tab_item > a{
-	color:white;
-	font-size: 18px;
-}
 
-.tab_item.active{
-	background-color: var(--secondary-color);
-	font-weight: bold;
-}
-
-/*Carousel rules*/
-#carousel_container.carousel.slide{
-	max-width:98vw;
-	max-height: 60vh;
-	background-color: var(--secondary-color);
-}
-
-.carousel-inner{
-	max-width:98vw;
-	max-height:60vh;
-}
-
-/*Images sizing*/
-.carousel-item.active, .carousel-item{
-	max-width:98vw;
-	max-height: 60vh;
-	padding:1vh;
-	padding-left: 9.5vw;
-	padding-right: 9.5vw;
-}
-
-/*Description rules*/
-#project_description{
-	background-color: var(--secondary-color);
-	text-align: left;
-	padding:1%;
-	padding-left: 9.5vw;
-}
-
+/* Desktop layout */
 @media only screen and (min-width: 768px){
 	body{
 		font-size: 16px;
