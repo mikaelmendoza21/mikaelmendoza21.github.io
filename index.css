@@ -4,6 +4,8 @@
 :root {
   --main-color: #2f006d; /* Dark Purple */
   --secondary-color:#673DCC; /* Lighter Purple */
+  --main-font-color:#ffffff; /* White */
+  --secondary-font-color:#673DCC; /* Lighter Purple */
 }
 
 html{
@@ -27,26 +29,44 @@ body{
 }
 
 #tabs{
-	color: white;
+	color: var(--main-font-color);
 	background-color: var(--secondary-color);
 	border: none;
 	margin: 2%; 
 }
 
 #tab-list{
-	background-color: var(--main-color);
+	background-color: var(--main-font-color);
 	border: none;
 }
 
-.ui-tabs-active.tab-title{
+/*.ui-tabs-active.tab-title{
 	background-color: black;
 	border: none;
+}*/
+
+.tab-title{
+	color: var(--secondary-color);
+	display:inline-flex;
+	margin:5px;
+}
+
+.table-title.selected{
+	color: var(--main-font-color);
 }
 
 .tab-content{
-	color: white;
+	color: var(--main-font-color);
+	display: none;
 }
 
+.active{
+	display: block;
+}
+
+.hidden{
+	display: none;
+}
 
 /* Desktop layout */
 @media only screen and (min-width: 768px){

@@ -12,12 +12,14 @@
         crossorigin="anonymous"></script>
 
         <!-- jQuery UI -->
+        <!--
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/jquery-ui.js"">
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      -->
 
         <!-- Custom Stylesheet -->
-        <link rel="stylesheet" type = "text/css" href = "index.css"/>
+        <link rel="stylesheet" type = "text/css" href="index.css"/>
 
         <!-- Custom Script -->
         <script type="text/javascript" src="index.js"></script>
@@ -29,22 +31,24 @@
         <img id="portrait" src="https://avatars2.githubusercontent.com/u/16824620?v=3&s=400" alt="Programmer Photo">
       </div>
       <div id="tabs">
-        <ul id="tab-list">
-          <li class="tab-title"><a href="#tabs-1"><b>Summary</b></a></li>
-          <li class="tab-title"><a href="#tabs-2"><b>Experience</b></a></li>
-          <li class="tab-title"><a href="#tabs-3"><b>Projects</b></a></li>
-        </ul>
-        <div id="tabs-1" class="tab-content">
-          <p>B.S Computer Science</p>
-          <p>Interests: Web Development, Mobile Applications, System Design &amp architecture</p>
+        <div id="tab-list">
+          <div class="tab-title selected" data-index="1" ><b>Summary</b></div>
+          <div class="tab-title" data-index="2"><b>Experience</b></div>
+          <div class="tab-title" data-index="3"><b>Projects</b></div>
         </div>
-        <div id="tabs-2" class="tab-content">
-          <p>Experience</p>
-          <p>Section under development. Please come back later for more</p>
-        </div>
-        <div id="tabs-3" class="tab-content">
-          <p>Projects</p>
-          <p>Section under development. Please come back later for more</p>
+        <div id="tab-container">
+          <div id="tab-1" data-index="1" class="tab-content active">
+            <p>B.S Computer Science</p>
+            <p>Interests: Web Development, Mobile Applications, System Design &amp architecture</p>
+          </div>
+          <div id="tab-2" data-index="2" class="tab-content">
+            <p>Experience</p>
+            <p>Section under development. Please come back later for more</p>
+          </div>
+          <div id="tab-3" data-index="3" class="tab-content">
+            <p>Projects</p>
+            <p>Section under development. Please come back later for more</p>
+          </div>
         </div>
       </div>
     </body>
