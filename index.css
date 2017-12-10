@@ -4,6 +4,9 @@
 :root {
   --main-color: #2f006d; /* Dark Purple */
   --secondary-color:#673DCC; /* Lighter Purple */
+  --contrast-color:#000000; /* Black */
+  --main-font-color:#ffffff; /* White */
+  --secondary-font-color:#673DCC; /* Lighter Purple */
 }
 
 html{
@@ -15,10 +18,11 @@ body{
     font-size: 16px;
     min-height: 98%;
     color: white;
+    line-height: 0.9;
 }
+
 #info-card{
 	text-align: center;
-	line-height: 0.6;
 }
 
 #portrait{
@@ -27,35 +31,83 @@ body{
 }
 
 #tabs{
-	color: white;
+	color: var(--main-font-color);
 	background-color: var(--secondary-color);
-	border: none;
-	margin: 2%; 
+	border-radius: 0px 25px 0px 0px;
+	margin: 1%; 
 }
 
 #tab-list{
 	background-color: var(--main-color);
-	border: none;
 }
 
-.ui-tabs-active.tab-title{
-	background-color: black;
-	border: none;
+#tab-container{
+	line-height: 0.85;
+}
+
+.tab-title{
+	color: var(--secondary-color);
+	display:inline-flex;
+	background-color: var(--main-color);
+	padding: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin: 0;
+
+	/* Border*/
+	border: solid var(--main-color);
+	border-width: 0px 1px 0px 0px;
+	border-radius: 0px 10px 0px 0px;
+}
+
+.tab-title:hover{
+	cursor: pointer;
+	color:var(--main-font-color);
+}
+
+.selected{
+	color: var(--main-font-color);
+	background-color: var(--secondary-color);
 }
 
 .tab-content{
-	color: white;
+	color: var(--main-font-color);
+	display: none;
+	padding:10px;
 }
 
+.active{
+	display: block;
+}
+
+.hidden{
+	display: none;
+}
 
 /* Desktop layout */
 @media only screen and (min-width: 768px){
-	body{
+	html, body{
 		font-size: 16px;
+		height:96%;
 	}
 	#portrait{
-		width:20%;
+		width:50%;
 		margin: 2%; 
+	}
+
+	#info-card{
+		position: fixed;
+		width:25%;
+		height:96%;
+		left:0;
+		top:15px;
+	}
+	#tabs{
+		position: fixed;
+		width:70%;
+		right: 0;
+		top: 10px;
+		height: 94%
 	}
 
 }
