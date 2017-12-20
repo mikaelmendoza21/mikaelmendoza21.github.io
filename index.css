@@ -4,8 +4,9 @@
 :root {
   --main-color: #2f006d; /* Dark Purple */
   --secondary-color:#673DCC; /* Lighter Purple */
-  --contrast-color:#000000; /* Black */
-  --main-font-color:#ffffff; /* White */
+  --left-panel-color:#000000; /* Black */
+  --contrast-color:#ffffff; /* White */
+  --main-font-color:#000000; /* Black */
   --secondary-font-color:#673DCC; /* Lighter Purple */
 }
 
@@ -14,27 +15,32 @@ html{
 }
 
 body{
-    font-family:  trebuchet, sans-serif;
+    font-family:  Tahoma, Geneva, sans-serif;
     font-size: 16px;
     min-height: 98%;
-    color: white;
-    line-height: 0.9;
+    color: var(--contrast-color);
+    line-height: 1;
+    margin: 0;
 }
 
 #info-card{
 	text-align: center;
+	max-height:35%;
+	color: var(--contrast-color);
+	background-color: #000000; /* Black */
+	padding: 1%;
 }
 
 #portrait{
-	width:35%;
-	margin: 2%; 
+	max-width:20%;
+	padding: 2%; 
 }
 
 #tabs{
 	color: var(--main-font-color);
 	background-color: var(--secondary-color);
 	border-radius: 0px 25px 0px 0px;
-	margin: 1%; 
+	margin:10px;
 }
 
 #tab-list{
@@ -62,18 +68,21 @@ body{
 
 .tab-title:hover{
 	cursor: pointer;
-	color:var(--main-font-color);
+	color:var(--contrast-color);
 }
 
 .selected{
-	color: var(--main-font-color);
+	color:var(--contrast-color);
 	background-color: var(--secondary-color);
 }
 
 .tab-content{
 	color: var(--main-font-color);
+	background-color:var(--contrast-color);
 	display: none;
 	padding:10px;
+	padding-top: 5px;
+	height:100%;
 }
 
 .active{
@@ -84,30 +93,39 @@ body{
 	display: none;
 }
 
+/* Smaller type for tiny screens*/
+@media only screen and (max-width: 365px){
+	html, body{
+		font-size: 12px;
+	}
+}
+
 /* Desktop layout */
 @media only screen and (min-width: 768px){
 	html, body{
 		font-size: 16px;
-		height:96%;
+		height: 100%;
 	}
 	#portrait{
-		width:50%;
-		margin: 2%; 
+		min-width:60%;
+		padding: 20px; 
+		padding-top:0;
 	}
 
 	#info-card{
 		position: fixed;
 		width:25%;
-		height:96%;
+		min-height:100%;
 		left:0;
-		top:15px;
+		padding-top:15px;
 	}
 	#tabs{
 		position: fixed;
-		width:70%;
+		width:71%;
 		right: 0;
 		top: 10px;
-		height: 94%
+		max-height: 90%;
+		overflow-y: auto;
 	}
 
 }
