@@ -1,7 +1,6 @@
 /* Mikael Mendoza*/
 
 $(document).ready(function(){
-	console.log('I am the DOM. I have loaded.');
 
 	//Tab switching
 	$('.tab-title').click(function(){

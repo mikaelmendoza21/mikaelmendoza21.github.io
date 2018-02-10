@@ -4,7 +4,7 @@
 :root {
   --main-color: #2f006d; /* Dark Purple */
   --secondary-color:#673DCC; /* Lighter Purple */
-  --left-panel-color:#000000; /* Black */
+  --left-panel-color:#161616; /* Black */
   --contrast-color:#ffffff; /* White */
   --main-font-color:#000000; /* Black */
   --secondary-font-color:#673DCC; /* Lighter Purple */
@@ -27,7 +27,7 @@ body{
 	text-align: center;
 	max-height:35%;
 	color: var(--contrast-color);
-	background-color: #000000; /* Black */
+	background-color: var(--left-panel-color); 
 	padding: 1%;
 }
 
