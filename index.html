@@ -1,73 +1,107 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Mikael A. Mendoza - Software Developer</title>
 
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mikael A. Mendoza - Software Developer</title>
 
-        <!-- jQuery UI -->
-        <!--
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+  <!-- jQuery UI -->
+  <!--
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/jquery-ui.js"">
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       -->
 
-        <!-- Custom Stylesheet -->
-        <link rel="stylesheet" type = "text/css" href="index.css"/>
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="index.css" />
 
-        <!-- Main Script -->
-        <script type="text/javascript" src="index.js"></script>
-    </head>
-    <body>
-      <div id="info-card">
-        <h1 class="page_title">Mikael A. Mendoza</h1>
-        <h3>Software Developer</h3>
-        <img id="portrait" src="https://avatars2.githubusercontent.com/u/16824620?v=3&s=400" alt="Programmer Photo">
+  <!-- Main Script -->
+  <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+  <div id="info-card">
+    <h1 class="page_title">Mikael A. Mendoza</h1>
+    <h2>Software Developer</h2>
+    <img id="portrait" src="https://avatars2.githubusercontent.com/u/16824620?v=3&s=400" alt="Programmer Photo">
+  </div>
+  <div id="tabs">
+    <div id="tab-list">
+      <div class="tab-title selected" data-index="1">
+        <h3>
+          <b>Summary</b>
+        </h3>
       </div>
-      <div id="tabs">
-        <div id="tab-list">
-          <div class="tab-title selected" data-index="1" ><h3><b>Summary</b></h3></div>
-          <div class="tab-title" data-index="2"><h3><b>Experience</b></h3></div>
-          <div class="tab-title" data-index="3"><h3><b>Projects</b></h3></div>
-        </div>
-        <div id="tab-container">
-          <div id="tab-1" data-index="1" class="tab-content active">
-            <h3>B.S Computer Science</h3>
-            <p> Cal State Northridge 2017</p>
-            <br/>
-            <h3>Interests</h3>
-            <p>Web Development, Mobile Applications, System Design &amp architecture</p>
-          </div>
-          <div id="tab-2" data-index="2" class="tab-content">
-            <h3>Junior Software Developer</h3>
-            <h4><i>Accessory Power (2017 - Present)</i></h4>
-            <p>.NET Application Development, Web Development, Software Architecture and Design</p>
-            <br />
-            <h3>Front-End Web Development Intern</h3>
-            <h4><i>HushHush (2017)</i></h4>
-            <p>Javascript and CSS-based animations for company's website</p>
-          </div>
-          <div id="tab-3" data-index="3" class="tab-content">
-            <h3>Projects</h3>
-            <p>These are some of my active and previous software projects</p>
-            <br />
-            <h4>Strolling Around</h4>
-            <h4><i>CSUN Accessibility Competition 2016</i></h4>
-            <p>An Android application developed as part of a group project, aiming to provide an open-source accessibility map via crowdsourcing</p>
-            <p>Find more on the repo <a target="_blank" href="https://github.com/mikaelmendoza21/Strolling-Around">here</a></p>
-            <br/>
-            <h4>neatoNode</h4>
-            <h4><i>Personal Node.js server</i></h4>
-            <p>A personal project to learn and play on the Node platform (Active)</p>
-            <p>Repo is <a target="_blank" href="https://github.com/mikaelmendoza21/neatoNode">here</a></p>
-          </div>
+      <div class="tab-title" data-index="2">
+        <h3>
+          <b>Experience</b>
+        </h3>
+      </div>
+      <div class="tab-title" data-index="3">
+        <h3>
+          <b>Projects</b>
+        </h3>
+      </div>
+    </div>
+    <div id="tab-container">
+      <div id="tab-1" data-index="1" class="tab-content active">
+        <h3>B.S Computer Science</h3>
+        <p> Cal State Northridge 2017</p>
+        <div class="content-entry">
+          <h3>Interests</h3>
+          <p>Web Development, Mobile Applications, System Design &amp architecture</p>
         </div>
       </div>
-    </body>
+      <div id="tab-2" data-index="2" class="tab-content">
+        <div class="content-entry">
+          <h3>Junior Software Developer</h3>
+          <h4>
+            <i>Accessory Power (2017 - Present)</i>
+          </h4>
+          <p>.NET Application Development, Web Development, Software Architecture and Design</p>
+        </div>
+        <div class="content-entry">
+          <h3>Front-End Web Development Intern</h3>
+          <h4>
+            <i>HushHush (2017)</i>
+          </h4>
+          <p>Javascript and CSS-based animations for company's website</p>
+        </div>
+      </div>
+      <div id="tab-3" data-index="3" class="tab-content">
+        <h3>Projects</h3>
+        <p>These are some of my active and previous software projects</p>
+        <br />
+        <div class="content-entry">
+          <h4>Strolling Around</h4>
+          <h4>
+            <i>CSUN Accessibility Competition 2016</i>
+          </h4>
+          <p>An Android application developed as part of a group project, aiming to provide an open-source accessibility map
+            via crowdsourcing</p>
+          <p>Find more on the repo
+            <a target="_blank" href="https://github.com/mikaelmendoza21/Strolling-Around">here</a>
+          </p>
+        </div>
+        <div class="content-entry">
+          <h4>neatoNode</h4>
+          <h4>
+            <i>Personal Node.js server</i>
+          </h4>
+          <p>A personal project to learn and play on the Node platform (Active)</p>
+          <p>Repo is
+            <a target="_blank" href="https://github.com/mikaelmendoza21/neatoNode">here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
