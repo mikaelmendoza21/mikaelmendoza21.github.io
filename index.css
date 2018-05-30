@@ -2,13 +2,13 @@
 /* Mobile-First layout rules */
 
 :root {
-  --main-color: #2f006d; /* Dark Purple */
-  --secondary-color:#673DCC; /* Lighter Purple */
-  --left-panel-color:#161616; /* Black */
-  --contrast-color:#ffffff; /* White */
-  --main-font-color:#000000; /* Black */
-  --secondary-font-color:#673DCC; /* Lighter Purple */
-  --border-light-color:#bfc0c1;  /* Light Grey */
+  --main-color: #673DCC;
+  --secondary-color:#2f006d;
+  --left-panel-color:#161616;
+  --contrast-color:#ffffff;
+  --main-font-color:#000000;
+  --secondary-font-color:#2f006d;
+  --border-light-color:#bfc0c1;
 }
 
 html{
@@ -17,7 +17,7 @@ html{
 
 body{
     font-family: Verdana, sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
     min-height: 98%;
     color: var(--contrast-color);
     line-height: 1;
@@ -87,6 +87,7 @@ h1,h2,h3,h4{
 	padding:10px;
 	padding-top: 5px;
 	height:100%;
+	border: 2px solid var(--secondary-color);
 }
 
 .content-entry{
@@ -108,6 +109,7 @@ h1,h2,h3,h4{
 @media (min-width: 768px){
 	html, body{
 		height: 100%;
+		font-size: 1em;
 	}
 	h1,h2,h3,h4{
 		line-height: 0.85;
