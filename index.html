@@ -1,107 +1,176 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Developer Home page">
+    <meta name="author" content="Mikael A. Mendoza, based on Bootstrap 4 Carousel template">
+    <title>Mikael A. Mendoza - Software Developer</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mikael A. Mendoza - Software Developer</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="index.css" />
 
-  <!-- jQuery UI -->
-  <!--
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/jquery-ui.js"">
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-      -->
+    <!-- Main Script -->
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+      <header>
+          <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Mikael M</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Summary</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <main role="main">
 
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" type="text/css" href="index.css" />
-
-  <!-- Main Script -->
-  <script type="text/javascript" src="index.js"></script>
-</head>
-
-<body>
-  <div id="info-card">
-    <h1 class="page_title">Mikael A. Mendoza</h1>
-    <h2>Software Developer</h2>
-    <img id="portrait" src="https://avatars2.githubusercontent.com/u/16824620?v=3&s=400" alt="Programmer Photo">
-  </div>
-  <div id="tabs">
-    <div id="tab-list">
-      <div class="tab-title selected" data-index="1">
-        <h3>
-          <b>Summary</b>
-        </h3>
-      </div>
-      <div class="tab-title" data-index="2">
-        <h3>
-          <b>Experience</b>
-        </h3>
-      </div>
-      <div class="tab-title" data-index="3">
-        <h3>
-          <b>Projects</b>
-        </h3>
-      </div>
-    </div>
-    <div id="tab-container">
-      <div id="tab-1" data-index="1" class="tab-content active">
-        <h3>B.S Computer Science</h3>
-        <p> Cal State Northridge 2017</p>
-        <div class="content-entry">
-          <h3>Interests</h3>
-          <p>Web Development, Mobile Applications, System Design &amp architecture</p>
-        </div>
-      </div>
-      <div id="tab-2" data-index="2" class="tab-content">
-        <div class="content-entry">
-          <h3>Junior Software Developer</h3>
-          <h4>
-            <i>Accessory Power (2017 - Present)</i>
-          </h4>
-          <p>.NET Application Development, Web Development, Software Architecture and Design</p>
-        </div>
-        <div class="content-entry">
-          <h3>Front-End Web Development Intern</h3>
-          <h4>
-            <i>HushHush (2017)</i>
-          </h4>
-          <p>Javascript and CSS-based animations for company's website</p>
-        </div>
-      </div>
-      <div id="tab-3" data-index="3" class="tab-content">
-        <h3>Projects</h3>
-        <p>These are some of my active and previous software projects</p>
-        <br />
-        <div class="content-entry">
-          <h4>Strolling Around</h4>
-          <h4>
-            <i>CSUN Accessibility Competition 2016</i>
-          </h4>
-          <p>An Android application developed as part of a group project, aiming to provide an open-source accessibility map
-            via crowdsourcing</p>
-          <p>Find more on the repo
-            <a target="_blank" href="https://github.com/mikaelmendoza21/Strolling-Around">here</a>
-          </p>
-        </div>
-        <div class="content-entry">
-          <h4>neatoNode</h4>
-          <h4>
-            <i>Personal Node.js server</i>
-          </h4>
-          <p>A personal project to learn and play on the Node platform (Active)</p>
-          <p>Repo is
-            <a target="_blank" href="https://github.com/mikaelmendoza21/neatoNode">here</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" ><rect fill="#777" width="100%" height="100%"/></svg>
+                  <div class="container">
+                    <div class="carousel-caption text-left">
+                      <h1>Mikael A. Mendoza</h1>
+                      <h2>Software Developer</h2>
+                      <p>Los Angeles, CA</p>
+                      <p><a class="btn btn-lg btn-primary" href="#" role="button">Hello :)</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" ><rect fill="#777" width="100%" height="100%"/></svg>
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h1>Writing Code since 2013</h1>
+                      <p><i>According to official guestimates</i></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" ><rect fill="#777" width="100%" height="100%"/></svg>
+                  <div class="container">
+                    <div class="carousel-caption text-right">
+                      <h1>More to come!</h1>
+                      <p>Eventually</p>
+                      <p><a class="btn btn-lg btn-primary" href="#" role="button">Interesting</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          
+          
+            <!-- Marketing messaging and featurettes
+            ================================================== -->
+            <!-- Wrap the rest of the page in another container to center all the content. -->
+          
+            <div class="container marketing">
+          
+              <!-- Three columns of text below the carousel -->
+              <div class="row">
+                <div class="col-lg-4">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"/><text fill="#777" dy=".3em" x="50%" y="50%">Grad</text></svg>
+                  <h2>B.S. Computer Science</h2>
+                  <p>Graduated 2017</p>
+                  <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"/><text fill="#777" dy=".3em" x="50%" y="50%">Pro</text></svg>
+                  <h2>Experience</h2>
+                  <p>Professional since 2017. I have dabbled on Javascript, C# ASP.NET, Android, Node.js, PHP, MySQL, MongoDb, even Unity and other technologies.</p>
+                  <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"/><text fill="#777" dy=".3em" x="50%" y="50%">var</text></svg>
+                  <h2>Inquisitive</h2>
+                  <p>Web, Apps, Dbs. They're all interesting and can be fun to build.</p>
+                  <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
+                </div><!-- /.col-lg-4 -->
+              </div><!-- /.row -->
+          
+          
+              <!-- START THE FEATURETTES -->
+          
+              <hr class="featurette-divider">
+          
+              <div class="row featurette">
+                <div class="col-md-7">
+                  <h2 class="featurette-heading">Software Engineering. <span class="text-muted">Doing it.</span></h2>
+                  <p class="lead">I fill out my weekdays listening to loud music while developing Applications as a Full Stack Developer</p>
+                </div>
+                <div class="col-md-5">
+                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect fill="#eee" width="100%" height="100%"/><text fill="#aaa" dy=".3em" x="50%" y="50%">`${codez}`</text></svg>
+                </div>
+              </div>
+          
+              <hr class="featurette-divider">
+          
+              <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                  <h2 class="featurette-heading">Design & Architecture. <span class="text-muted">I aim to be SOLID.</span></h2>
+                  <p class="lead">In addition to churning out code, I enjoy being a part of the design of Systems, applying the best architectural techniques.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect fill="#eee" width="100%" height="100%"/><text fill="#aaa" dy=".3em" x="50%" y="50%">;p</text></svg>
+                </div>
+              </div>
+          
+              <hr class="featurette-divider">
+          
+              <div class="row featurette">
+                <div class="col-md-7">
+                  <h2 class="featurette-heading">Learning. <span class="text-muted">Because you can never know too much</span></h2>
+                  <p class="lead">I like staying fresh by listening to podcasts, reading and learning about all the new tech out there.</p>
+                </div>
+                <div class="col-md-5">
+                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect fill="#eee" width="100%" height="100%"/><text fill="#aaa" dy=".3em" x="50%" y="50%">:o</text></svg>
+                </div>
+              </div>
+          
+              <hr class="featurette-divider">
+          
+              <!-- /END THE FEATURETTES -->
+          
+            </div><!-- /.container -->
+          
+          
+            <!-- Footer -->
+            <footer class="container">
+              <p class="float-right"><a href="#">Back to top</a></p>
+              <p>&copy; 2019 Mikael A. Mendoza &middot; Listen to Metal and Code \,,/</p>
+            </footer>
+          </main>
+  </body>
 </html>
