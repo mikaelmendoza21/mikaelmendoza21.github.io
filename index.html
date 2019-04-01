@@ -42,7 +42,6 @@
           </nav>
         </header>
         <main role="main">
-
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -57,7 +56,6 @@
                       <h1>Mikael A. Mendoza</h1>
                       <h2>Software Developer</h2>
                       <p>Los Angeles, CA</p>
-                      <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Hello :)</a></p> -->
                     </div>
                   </div>
                 </div>
@@ -67,6 +65,7 @@
                     <div class="carousel-caption">
                       <h1>Writing Code since 2013</h1>
                       <p><i>*According to official guestimates</i></p>
+                      <p><button id="coding-experience" class="btn btn-lg btn-primary" onclick="showCodingExperience()">See More</button></p>
                     </div>
                   </div>
                 </div>
@@ -174,8 +173,27 @@
             <!-- Footer -->
             <footer class="container">
               <p class="float-right"><a href="#">Back to top</a></p>
-              <p>&copy; 2019 Mikael A. Mendoza &middot; Listen to Metal and Code \,,/</p>
+              <p>&copy; 2019 Mikael A. Mendoza &middot; Listen to Metal and Code \m/</p>
             </footer>
+
+            <div id="modal-popup" class="modal" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="modal-content-text"></p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </main>
   </body>
 </html>

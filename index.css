@@ -2,7 +2,7 @@
 /* Mobile-First layout rules */
 
 :root {
-  --main-background-color: #727575;
+  --main-background-color: #191A1A;
   --secondary-color:#0072be;
   --contrast-color:#000000;
   --main-font-color:#ffffff;
@@ -33,6 +33,9 @@ body {
   color: var(--main-background-color);
 }
 
+.bg-dark {
+  background-color: var(--main-background-color) !important;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
