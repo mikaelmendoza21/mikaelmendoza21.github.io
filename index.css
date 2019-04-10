@@ -3,13 +3,20 @@
 
 :root {
   --main-background-color: #191A1A;
+  --secondary-background-color:#1a1d29;
+  --dark-secondary-background-color:#1a1d29;
   --secondary-color:#0072be;
   --contrast-color:#000000;
   --main-font-color:#ffffff;
+  --dark-main-font-color:#ffffff;
 }
 
 html{
-	background-color: var(--main-background-color);
+  background-color: var(--main-background-color);
+}
+body.darkened, .modal-content.darkened, .modal-content.darkened button.close{
+  background-color: var(--dark-secondary-background-color);
+  color: var(--dark-main-font-color) !important;
 }
 
 .bd-placeholder-img {
@@ -30,7 +37,6 @@ html{
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: var(--main-background-color);
 }
 
 .bg-dark {

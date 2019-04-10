@@ -22,7 +22,7 @@
     <!-- Main Script -->
     <script type="text/javascript" src="index.js"></script>
   </head>
-  <body>
+  <body class="darkened">
       <header>
           <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <a class="navbar-brand" href="#">Mikael M</a>
@@ -38,6 +38,7 @@
                   <a class="nav-link" href="#summary">Summary</a>
                 </li>
               </ul>
+              <button id="theme-toggler" alt="Toggle Color Theme" class="btn btn-light btn-link pull-right" onclick="toggleDarkTheme()">Light Theme</button>
             </div>
           </nav>
         </header>
@@ -183,7 +184,7 @@
 
             <div id="modal-popup" class="modal" tabindex="-1" role="dialog">
               <div class="modal-dialog" role="document">
-                <div class="modal-content">
+                <div class="modal-content darkened">
                   <div class="modal-header">
                     <h5 class="modal-title"></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
