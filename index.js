@@ -1,8 +1,8 @@
 var greeting = 'dear visitor';
 var $modal;
 var isDark = false; // TODO: read from cookie
-var switchToDarkMessage = 'Dark Theme';
-var switchToLightMessage = 'Light Theme';
+var switchToDark = '<img class="theme-icon" src="images/dark.png"/>Dark';
+var switchToLight = '<img class="theme-icon" src="images/light.png"/>Light';
 
 $(document).ready(function(){
 	console.log(`Hello ${greeting}!`);
@@ -23,18 +23,22 @@ function showCodingExperience(){
 	$modal.modal('show');
 }
 
+function startGame(){
+
+}
+
 function toggleDarkTheme(){
 	$('body').toggleClass('darkened');
 	$('.modal-content').toggleClass('darkened');
 
 	if($('body').hasClass('darkened')){
 		isDark = true;
-		$('#theme-toggler').html(switchToLightMessage);
+		$('#theme-toggler').html(switchToLight);
 		$('#theme-toggler').removeClass('btn-dark').addClass('btn-light');
 	}
 	else{
 		isDark = false;
-		$('#theme-toggler').html(switchToDarkMessage);
+		$('#theme-toggler').html(switchToDark);
 		$('#theme-toggler').removeClass('btn-light').addClass('btn-dark');
 	}
 	// TODO: Collapse $('#navbar-toggler')

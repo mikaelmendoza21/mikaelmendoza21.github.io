@@ -24,9 +24,18 @@ body.darkened, .modal-content.darkened, .modal-content.darkened button.close{
   text-anchor: middle;
 }
 
+.theme-icon{
+  width: 1rem;
+  height: 1rem;
+}
+
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
+  }
+  .theme-icon{
+    width: 2rem;
+    height: 2rem;
   }
 }
 
