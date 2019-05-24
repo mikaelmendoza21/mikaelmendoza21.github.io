@@ -1,2 +1,2 @@
 # mikaelmendoza21.github.io
-Software Developer porfessional information site.
+Software Developer professional information site.
