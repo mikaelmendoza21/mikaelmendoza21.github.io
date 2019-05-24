@@ -1,2 +1,2 @@
 # mikaelmendoza21.github.io
-Developer site - In Progress
+Software Developer porfessional information site.
